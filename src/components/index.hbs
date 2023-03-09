@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {{> head}}
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <section class="alert alert-success">
-            <h2>New Web App</h2>
-            <p>Have Fun!</p>
-          </section>
+
+<head>
+  {{> head}}
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="wb-tabs">
+          <div class="tabpanels">
+            <details id="details-panel1">
+              <summary>Example 1</summary>
+              <p>
+                Chart 1
+              </p>
+              <div id="chart1"></div>
+            </details>
+            <details id="details-panel2" open="open">
+              <summary>Example 2</summary>
+              <p>
+                Chart 2
+              </p>
+              <div id="chart2"></div>
+            </details>
+          </div>
         </div>
       </div>
     </div>
-    {{> footer}}
-  </body>
+  </div>
+  {{> footer}}
+</body>
+
 </html>
